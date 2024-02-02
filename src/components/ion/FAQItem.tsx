@@ -20,7 +20,7 @@ function FAQItem({
         {
           "flex h-fit w-[652px] flex-col items-start justify-center gap-1":
             true,
-          "text-base font-medium text-[#b3b3b3]": !isOpen,
+          "text-base font-medium text-paragraphs": !isOpen,
         },
         className
       )}
@@ -28,7 +28,7 @@ function FAQItem({
       <div
         className={clsx({
           "flex items-center justify-center gap-2": true,
-          "text-base font-medium text-[#b3b3b3]": isOpen,
+          "text-base font-medium text-paragraphs": isOpen,
         })}
       >
         <img
@@ -43,7 +43,7 @@ function FAQItem({
         <div>{question}</div>
       </div>
       {isOpen && (
-        <p className="text-sm font-light text-[#a7a7a7] mx-6">{answer}</p>
+        <p className="text-sm font-light text-paragraphs mx-6">{answer}</p>
       )}
     </div>
   );

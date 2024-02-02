@@ -10,11 +10,11 @@ function Onboarding() {
   }
 
   return (
-    <div className="flex min-h-screen w-screen flex-col items-center gap-[212px] bg-[#141518]">
+    <div className="flex min-h-screen w-screen flex-col items-center gap-[212px] bg-bodyBackground">
       <Navbar selected="none" logoOnly={true} />
       <div className="flex w-full max-w-[626px] flex-col items-start justify-end gap-6 text-base">
         <div className="flex w-full flex-col items-start gap-4">
-          <div className="flex w-full items-center gap-4 font-medium text-white">
+          <div className="flex w-full items-center gap-4 font-medium text-titlesIcons">
             <div className="flex items-start gap-2 w-full">
               <img
                 src="/images/onboarding/workspace_premium_FILL1_wght400_GRAD0_opsz24-1.svg"
@@ -24,7 +24,7 @@ function Onboarding() {
               <div>Design Brief</div>
             </div>
           </div>
-          <div className="w-full leading-5 text-[#b3b3b3]">
+          <div className="w-full leading-5 text-paragraphs">
             Include context that you feel would be helpful for your designer.
             You might include KPIs, data, interviews, competitors, moodboards,
             invites, etc.
@@ -44,12 +44,12 @@ function Onboarding() {
               ethnography research and thought partnership. The customer
               anticipates needing multiple designers but wants to start with
               redesigning the website first within the next month and a half."
-            className="w-full bg-transparent min-h-80 box-content rounded-[6px] border border-[#3a3a3f] bg-[#141518] p-4 text-white"
+            className="w-full min-h-80 box-content rounded-[6px] border border-stroke bg-surface1 p-4 text-titlesIcons"
           />
         </div>
         <button
           onClick={confirmClickHandler}
-          className="flex items-center justify-center gap-2.5 rounded-[6px] bg-white px-4 py-2 font-medium leading-4 text-[#404149]"
+          className="flex items-center justify-center gap-2.5 rounded-[6px] bg-slate-900 px-4 py-2 font-medium leading-4 text-slate-50"
         >
           <div>Confirm</div>
         </button>
