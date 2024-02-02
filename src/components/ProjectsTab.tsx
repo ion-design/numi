@@ -16,7 +16,7 @@ function ProjectsTab() {
     <div className="flex flex-col gap-y-10">
       <div className="flex flex-col items-start gap-4">
         <div className="flex w-full items-center justify-between text-base font-medium">
-          <div className="flex items-start gap-2 text-white">
+          <div className="flex items-start gap-2 text-titlesIcons">
             <img
               src="/images/onboarding/psychiatry_FILL1_wght400_GRAD0_opsz24-1.svg"
               alt="psychiatry_FILL1_wght400_GRAD0_opsz24 1"
@@ -26,7 +26,7 @@ function ProjectsTab() {
           </div>
           <button
             onClick={addClickHander}
-            className="flex items-center justify-center gap-2 rounded-[6px] bg-white px-4 py-2 leading-4 text-[#404149]"
+            className="flex items-center justify-center gap-2 rounded-[6px] bg-white px-4 py-2 leading-4 text-slate-50"
           >
             <img
               src="/images/onboarding/add_FILL1_wght400_GRAD0_opsz24-1.svg"
@@ -62,15 +62,6 @@ function ProjectsTab() {
               title="Landing Page Design"
               stage="completed"
             />
-            {!showAllProjects && (
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(180.00deg, rgba(20,21,24,0) 26.499998569488525%, rgba(20,21,24,1) 85.00000238418579%)",
-                }}
-              />
-            )}
           </div>
           {showAllProjects && (
             <>
@@ -83,10 +74,10 @@ function ProjectsTab() {
             </>
           )}
 
-          <div className="relative flex w-full flex-col items-center justify-center gap-6 text-xs leading-tight text-white">
+          <div className="relative flex w-full flex-col items-center justify-center gap-6 text-xs leading-tight text-titlesIcons">
             <button
               onClick={() => setShowAllProjects(!showAllProjects)}
-              className="absolute bottom-[-8px] right-[279px] flex items-center justify-center gap-1.5 bg-[#141518] px-2"
+              className="absolute bottom-[-8px] right-[279px] flex items-center justify-center gap-1.5 bg-bodyBackground px-2"
             >
               <div>
                 {showAllProjects ? "Hide Past Projects" : "View Past Projects"}
@@ -103,7 +94,7 @@ function ProjectsTab() {
         </div>
       </div>
       <div className="flex flex-col items-start gap-4">
-        <div className="flex w-full items-center justify-between text-base font-medium text-white">
+        <div className="flex w-full items-center justify-between text-base font-medium text-titlesIcons">
           <div className="flex items-start gap-2">
             <img
               src="/images/onboarding/perm_phone_msg_FILL1_wght400_GRAD0_opsz24-1.svg"
@@ -120,7 +111,7 @@ function ProjectsTab() {
         </div>
       </div>
       <div className="flex w-full flex-col items-start gap-4">
-        <div className="flex w-full items-center gap-2 text-base text-white">
+        <div className="flex w-full items-center gap-2 text-base text-titlesIcons">
           <img
             src="/images/onboarding/dashboard_black_24dp-(1)-1.svg"
             alt="dashboard_black_24dp (1) 1"
@@ -129,31 +120,35 @@ function ProjectsTab() {
           <div className="w-[668px]">Insights</div>
         </div>
         <div className="flex w-full items-start gap-4">
-          <div className="flex flex-1 items-center justify-center gap-6 rounded-[6px] border border-[#3a3a3f] bg-[#1c1d21] p-6">
+          <div className="flex flex-1 items-center justify-center gap-6 rounded-[6px] border border-stroke bg-surface1 p-6">
             <div className="flex flex-col items-start gap-4">
               <div className="flex flex-col items-center justify-center gap-2">
-                <div className="text-base font-bold text-white">87hrs</div>
-                <div className="text-sm font-medium leading-4 text-[#b3b3b3]">
+                <div className="text-base font-bold text-titlesIcons">
+                  87hrs
+                </div>
+                <div className="text-sm font-medium leading-4 text-paragraphs">
                   saved vs recruiting
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-1 items-center justify-center gap-6 rounded-[6px] border border-[#3a3a3f] bg-[#1c1d21] p-6">
+          <div className="flex flex-1 items-center justify-center gap-6 rounded-[6px] border border-stroke bg-surface1 p-6">
             <div className="flex flex-col items-start gap-4">
               <div className="flex flex-col items-center justify-center gap-2">
-                <div className="text-base font-bold text-white">$62,241</div>
-                <div className="text-sm font-medium leading-4 text-[#b3b3b3]">
+                <div className="text-base font-bold text-titlesIcons">
+                  $62,241
+                </div>
+                <div className="text-sm font-medium leading-4 text-paragraphs">
                   saved vs inhouse
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-1 items-center justify-center gap-6 rounded-[6px] border border-[#3a3a3f] bg-[#1c1d21] p-6">
+          <div className="flex flex-1 items-center justify-center gap-6 rounded-[6px] border border-stroke bg-surface1 p-6">
             <div className="flex flex-col items-start gap-4">
               <div className="flex flex-col items-center justify-center gap-2">
-                <div className="text-base font-bold text-white">147d</div>
-                <div className="text-sm font-medium leading-4 text-[#b3b3b3]">
+                <div className="text-base font-bold text-titlesIcons">147d</div>
+                <div className="text-sm font-medium leading-4 text-paragraphs">
                   as NUMI Customer
                 </div>
               </div>

@@ -3,27 +3,67 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --body-background: #f6f7fa;
+  --titles-icons: #000000;
+  --paragraphs: #64748b;
+  --surface-1: #ffffff;
+  --stroke: #e5e7eb;
+  --link-default: #809fec;
+  --slate-50: #f9fafb;
+  --slate-100: #f3f4f6;
+  --slate-200: #e5e7eb;
+  --slate-300: #d1d5db;
+  --slate-400: #9ca3af;
+  --slate-500: #6b7280;
+  --slate-600: #4b5563;
+  --slate-700: #374151;
+  --slate-800: #1f2937;
+  --slate-900: #111928;
+  --color-white: #ffffff;
+  --link-default-light: #1c64f2;
+  --table-row-default: var(--surface-1);
+  --table-row-selected: var(--slate-50);
+  --table-row-sub-level: var(--slate-100);
+  --communication-progress: #fbd928;
+  --communication-danger: #e22c4d;
+  --communication-success: #2d7909;
+  --communication-warning: #eb9003;
+  --communication-info: #057880;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --body-background: #141518;
+    --titles-icons: #ffffff;
+    --paragraphs: #b3b3b3;
+    --surface-1: #1c1d21;
+    --stroke: #3a3a40;
+    --link-default: #809fec;
+    --slate-50: #111928;
+    --slate-100: #1f2937;
+    --slate-200: #374151;
+    --slate-300: #4b5563;
+    --slate-400: #6b7280;
+    --slate-500: #9ca3af;
+    --slate-600: #d1d5db;
+    --slate-700: #e5e7eb;
+    --slate-800: #f3f4f6;
+    --slate-900: #f9fafb;
+    --color-white: #ffffff;
+    --link-default-dark: #77a0f2;
+    --table-row-default: var(--surface-1);
+    --table-row-selected: var(--slate-50);
+    --table-row-sub-level: var(--slate-100);
+    --communication-danger-dark: #ff708a;
+    --communication-success-dark: #8eca72;
+    --communication-warning-dark: #f3ac3d;
+    --communication-info-dark: var(--link-default);
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--titles-icons);
+  background: var(--body-background);
 }
 
 @layer utilities {

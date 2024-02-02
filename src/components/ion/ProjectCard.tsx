@@ -35,20 +35,20 @@ function ProjectCard({
   return (
     <div
       className={clsx(
-        "flex h-fit w-full items-start gap-[208px] rounded-[6px] border border-[#3a3a3f] bg-[#1c1d21] p-4",
+        "flex h-fit w-full items-start gap-[208px] rounded-[6px] border border-stroke bg-surface1 p-4",
         className
       )}
     >
       <div className="flex flex-1 flex-col items-start gap-4">
         <div className="flex w-full items-center justify-between">
-          <div className="text-base font-bold text-white">{title}</div>
+          <div className="text-base font-bold text-titlesIcons">{title}</div>
           <div
             className={clsx({
               "flex items-center text-sm font-medium leading-4 gap-x-2": true,
-              "gap-1 text-[#fad928]": stage === "progress",
-              "gap-0.5 text-[#ea9003]": stage === "upcoming",
-              "gap-0.5 text-[#e22c4d]": stage === "paused",
-              "gap-0.5 text-[#66c03c]": stage === "completed",
+              "gap-1 text-communication-progress": stage === "progress",
+              "gap-0.5 text-communication-warning": stage === "upcoming",
+              "gap-0.5 text-communication-danger": stage === "paused",
+              "gap-0.5 text-communication-success": stage === "completed",
             })}
           >
             <img
@@ -110,16 +110,16 @@ function ProjectCard({
               />
             </div>
             <div className="flex flex-col items-start justify-center gap-0.5">
-              <div className="text-base leading-5 text-white">{name}</div>
-              <div className="text-xs font-medium leading-4 text-[#b3b3b3]">
+              <div className="text-base leading-5 text-titlesIcons">{name}</div>
+              <div className="text-xs font-medium leading-4 text-paragraphs">
                 {position}
               </div>
             </div>
           </div>
-          <div className="flex w-1/3 items-start gap-2 text-base font-medium leading-4 text-white">
+          <div className="flex w-1/3 items-start gap-2 text-base font-medium leading-4 text-titlesIcons">
             <button
               onClick={chatClickHandler}
-              className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-[#39393a] px-4 py-2"
+              className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-stroke px-4 py-2"
             >
               <img
                 src="/images/onboarding/forum_FILL1_wght400_GRAD0_opsz24-1-19.svg"
@@ -130,7 +130,7 @@ function ProjectCard({
             </button>
             <button
               onClick={meetClickHandler}
-              className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-[#39393a] px-4 py-2"
+              className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-stroke px-4 py-2"
             >
               <img
                 src="/images/onboarding/groups_FILL1_wght400_GRAD0_opsz24-1-20.svg"

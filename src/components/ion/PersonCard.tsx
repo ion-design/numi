@@ -18,7 +18,7 @@ function PersonCard({ position = "", name = "" }: PersonCardProps) {
   }
 
   return (
-    <div className="flex h-fit max-w-[342px] items-start gap-[208px] rounded-[6px] border border-[#3a3a3f] bg-[#1c1d21] p-4">
+    <div className="flex h-fit max-w-[342px] items-start gap-[208px] rounded-[6px] border border-stroke bg-surface1 p-4">
       <div className="flex flex-1 flex-col items-start gap-4">
         <div className="flex items-center gap-2">
           <div className="relative flex h-10 w-10 items-start gap-2.5 rounded-[90px] bg-[url('/images/onboarding/frame-37.png')] bg-cover p-2">
@@ -29,16 +29,16 @@ function PersonCard({ position = "", name = "" }: PersonCardProps) {
             />
           </div>
           <div className="flex h-full flex-col items-start justify-center gap-0.5">
-            <div className="text-base leading-5 text-white">{name}</div>
-            <div className="text-sm font-medium leading-4 text-[#b3b3b3]">
+            <div className="text-base leading-5 text-titlesIcons">{name}</div>
+            <div className="text-sm font-medium leading-4 text-paragraphs">
               {position}
             </div>
           </div>
         </div>
-        <div className="flex h-8 w-[310px] items-start gap-2 text-base font-medium leading-4 text-white">
+        <div className="flex h-8 w-[310px] items-start gap-2 text-base font-medium leading-4 text-titlesIcons">
           <button
             onClick={chatClickHandler}
-            className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-[#39393a] px-4 py-2"
+            className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-stroke px-4 py-2"
           >
             <img
               src="/images/onboarding/forum_FILL1_wght400_GRAD0_opsz24-1.svg"
@@ -49,7 +49,7 @@ function PersonCard({ position = "", name = "" }: PersonCardProps) {
           </button>
           <button
             onClick={meetClickHandler}
-            className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-[#39393a] px-4 py-2"
+            className="flex flex-1 items-center justify-center gap-2.5 rounded-[6px] border border-stroke px-4 py-2"
           >
             <img
               src="/images/onboarding/groups_FILL1_wght400_GRAD0_opsz24-1.svg"

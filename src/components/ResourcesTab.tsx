@@ -6,7 +6,7 @@ import FAQItem from "@/components/ion/FAQItem";
 function ResourcesTab() {
   return (
     <div className="flex flex-col gap-y-4">
-      <div className="flex w-full items-center gap-2 text-base font-medium text-white">
+      <div className="flex w-full items-center gap-2 text-base font-medium text-titlesIcons">
         <img
           src="/images/onboarding/help_black_24dp-1.svg"
           alt="help_black_24dp 1"
@@ -14,8 +14,8 @@ function ResourcesTab() {
         />
         <div className="w-[668px]">Support</div>
       </div>
-      <div className="flex w-full flex-col items-start gap-6 rounded-2xl border border-[#27272d] bg-[#1b1c21] p-6">
-        <div className="flex items-center justify-center gap-2 text-base font-medium text-white">
+      <div className="flex w-full flex-col items-start gap-6 rounded-2xl border border-stroke bg-surface1 p-6">
+        <div className="flex items-center justify-center gap-2 text-base font-medium text-titlesIcons">
           Designer Collaboration
         </div>
         <FAQItem
@@ -48,7 +48,7 @@ function ResourcesTab() {
           question="How frequently should we expect communication from our designer?"
           isOpen={false}
         />
-        <div className="text-base font-medium text-white">Support</div>
+        <div className="text-base font-medium text-titlesIcons">Support</div>
         <FAQItem
           answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con"
           question="Why are we in two Slack channels?"

@@ -13,7 +13,7 @@ function Onboarding() {
   );
 
   return (
-    <div className="relative flex h-full min-h-screen w-full flex-col items-center gap-10 pb-10 bg-[#141518]">
+    <div className="relative flex h-full min-h-screen w-full flex-col items-center gap-10 pb-10 bg-bodyBackground">
       <Navbar
         logoOnly={false}
         selected={selected}

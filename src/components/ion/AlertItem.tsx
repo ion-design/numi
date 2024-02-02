@@ -18,10 +18,10 @@ function AlertItem({
     <div
       className={clsx(
         {
-          "flex h-fit w-[328px] flex-row items-start border-b border-[#27272d] gap-x-2 p-[5px]":
+          "flex h-fit w-[328px] flex-row items-start border-b border-stroke gap-x-2 p-[5px]":
             true,
-          "bg-[#24262c]": isNew,
-          "bg-[#1b1c21] text-[#b3b3b3]": !isNew,
+          "bg-surface1": isNew,
+          "bg-surface1 text-paragraphs": !isNew,
         },
         className
       )}
@@ -37,13 +37,13 @@ function AlertItem({
         <div
           className={clsx({
             "text-sm": true,
-            "w-[240px] font-medium text-white": isNew,
+            "w-[240px] font-medium text-titlesIcons": isNew,
             "leading-normal": !isNew,
           })}
         >
           {text}
         </div>
-        <div className="flex-shrink-0 text-xs leading-normal text-[#b3b3b3]">
+        <div className="flex-shrink-0 text-xs leading-normal text-paragraphs">
           {time}
         </div>
       </div>
